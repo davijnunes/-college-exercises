@@ -27,12 +27,11 @@ int main(){
 void inversionOfString(const char *input, char *output){
 
     // strlen return a quantity of characters
-    int length = strlen(input) - 1, j = 0;
+    int length = strlen(input) - 1;
 
     for(int i = length; i >= 0; i--){
 
-        output[j] = input[i];
-        j++;
+        output[length - i] = input[i];
 
         //printf("%c\n", output[j - 1]);
     }
